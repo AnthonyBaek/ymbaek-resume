@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="백영민(Young-Min Baek) — Software Engineer, KAIST PhD, ㈜솔루션링크 책임 컨설턴트">
+  <meta property="og:title" content="백영민 | CV">
+  <meta property="og:type" content="website">
+  <title>백영민 (이력서)</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====================================================
+       NAVIGATION
+  ==================================================== -->
+  <nav id="navbar" aria-label="페이지 네비게이션">
+    <div class="nav-inner">
+
+      <!-- Brand + Mobile hamburger -->
+      <div class="nav-brand">
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="메뉴 열기" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6"  x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+        <span class="nav-title" data-tr="nav.title">Resume</span>
+      </div>
+
+      <!-- Desktop tabs -->
+      <div class="nav-tabs" role="navigation">
+        <a href="#intro"        class="nav-tab" data-target="intro"        data-tr="nav.intro">소개</a>
+        <a href="#education"    class="nav-tab" data-target="education"    data-tr="nav.education">학력</a>
+        <a href="#experience"   class="nav-tab" data-target="experience"   data-tr="nav.experience">경력</a>
+        <a href="#projects"     class="nav-tab" data-target="projects"     data-tr="nav.projects">프로젝트</a>
+        <a href="#publications" class="nav-tab" data-target="publications" data-tr="nav.publications">논문</a>
+        <a href="#awards"       class="nav-tab" data-target="awards"       data-tr="nav.awards">수상</a>
+        <a href="#skills"       class="nav-tab" data-target="skills"       data-tr="nav.skills">기술/언어</a>
+      </div>
+
+      <!-- Action button group -->
+      <div class="nav-actions">
+        <button id="lang-btn" class="nav-action-btn lang-btn" aria-label="언어 전환">ENG</button>
+
+        <button id="print-btn" class="nav-action-btn" aria-label="인쇄">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 6 2 18 2 18 9"/>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+            <rect x="6" y="14" width="12" height="8"/>
+          </svg>
+        </button>
+
+        <button id="theme-toggle" class="nav-action-btn theme-toggle-btn" aria-label="테마 전환">
+          <svg class="icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <line x1="12" y1="2"  x2="12" y2="6"/>
+            <line x1="12" y1="18" x2="12" y2="22"/>
+            <line x1="4.93" y1="4.93"  x2="7.76"  y2="7.76"/>
+            <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/>
+            <line x1="2"  y1="12" x2="6"  y2="12"/>
+            <line x1="18" y1="12" x2="22" y2="12"/>
+            <line x1="4.93" y1="19.07" x2="7.76"  y2="16.24"/>
+            <line x1="16.24" y1="7.76"  x2="19.07" y2="4.93"/>
+          </svg>
+          <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile nav dropdown (below navbar) -->
+  <div id="mobile-nav" class="mobile-nav" role="navigation" aria-label="모바일 메뉴">
+    <a href="#intro"        class="mobile-nav-tab" data-target="intro"        data-tr="nav.intro">소개</a>
+    <a href="#education"    class="mobile-nav-tab" data-target="education"    data-tr="nav.education">학력</a>
+    <a href="#experience"   class="mobile-nav-tab" data-target="experience"   data-tr="nav.experience">경력</a>
+    <a href="#projects"     class="mobile-nav-tab" data-target="projects"     data-tr="nav.projects">프로젝트</a>
+    <a href="#publications" class="mobile-nav-tab" data-target="publications" data-tr="nav.publications">논문</a>
+    <a href="#awards"       class="mobile-nav-tab" data-target="awards"       data-tr="nav.awards">수상</a>
+    <a href="#skills"       class="mobile-nav-tab" data-target="skills"       data-tr="nav.skills">기술/언어</a>
+  </div>
+
+  <!-- ====================================================
+       MAIN LAYOUT
+  ==================================================== -->
+  <div class="main-layout">
+    <aside id="profile-sidebar" class="profile-sidebar" aria-label="프로필 정보"></aside>
+    <main  id="contents-area"   class="contents-area"></main>
+  </div>
+
+  <!-- ====================================================
+       FLOATING ACTION BUTTON
+  ==================================================== -->
+  <button id="scroll-to-top" class="fab" aria-label="맨 위로 이동" title="맨 위로">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor" stroke-width="2.5"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- ====================================================
+       MODAL
+  ==================================================== -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title"></h3>
+        <button id="modal-close" class="modal-close" aria-label="닫기">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       FOOTER
+  ==================================================== -->
+  <footer class="page-footer">
+    <div class="footer-inner">
+      <div class="footer-social">
+        <a href="https://www.rememberapp.co.kr/" target="_blank" rel="noopener" class="footer-icon-btn" aria-label="리멤버" title="리멤버">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="3" width="20" height="16" rx="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="19" x2="12" y2="21"/>
+            <circle cx="8.5" cy="10" r="2"/>
+            <path d="M14 9h4"/><path d="M14 12h4"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="footer-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener" class="footer-icon-btn" aria-label="GitHub" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
